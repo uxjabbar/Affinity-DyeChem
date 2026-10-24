@@ -107,30 +107,52 @@
     align-items:center;
     text-align:center;
     width:100%;
-    max-width:760px;
+    max-width:920px;
     margin:0 auto;
-    padding:40px 24px 34px;
+    padding:40px 18px 34px;
   }
 
   /* ---- top ---- */
   .top{display:flex;flex-direction:column;align-items:center;gap:20px}
 
-  .logo{width:clamp(148px,24vw,186px);height:auto;display:block}
+  .logo{width:clamp(126px,19vw,152px);height:auto;display:block}
 
   .badge{
     display:inline-flex;
     align-items:center;
     gap:9px;
     font-size:11px;
-    font-weight:500;
+    font-weight:600;
     letter-spacing:.18em;
     text-transform:uppercase;
-    color:var(--muted);
-    border:1px solid var(--line);
+    color:rgba(255,255,255,.94);
+    border:1px solid rgba(255,255,255,.2);
     border-radius:999px;
     padding:7px 15px 7px 12px;
-    background:rgba(255,255,255,.04);
+    background:rgba(255,255,255,.05);
     backdrop-filter:blur(8px);
+    position:relative;
+    overflow:hidden;
+    margin-bottom:26px;
+  }
+  /* soft white glow sweeping left to right, on a loop */
+  .badge::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(100deg,
+      transparent 20%,
+      rgba(255,255,255,.08) 45%,
+      rgba(255,255,255,.14) 50%,
+      rgba(255,255,255,.08) 55%,
+      transparent 80%);
+    transform:translateX(-100%);
+    animation:sweep 3.15s ease-in-out infinite;
+    pointer-events:none;
+  }
+  @keyframes sweep{
+    0%{transform:translateX(-100%)}
+    76.2%,100%{transform:translateX(100%)}
   }
   .dot{
     width:6px;height:6px;border-radius:50%;background:var(--teal);
@@ -149,22 +171,26 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding:52px 0;
+    /* heavier bottom padding lifts the block above true centre */
+    padding:40px 0 128px;
   }
 
   h1{
-    font-size:clamp(31px,5.6vw,52px);
+    font-size:clamp(30px,5.2vw,50px);
     font-weight:700;
-    line-height:1.1;
-    letter-spacing:-.024em;
-    max-width:15ch;
-    text-wrap:balance;
+    line-height:1.12;
+    letter-spacing:-.036em;
+  }
+  /* the hard break only applies once there is room for two full lines */
+  h1 br{display:none}
+  @media (min-width:620px){
+    h1 br{display:inline}
   }
 
   .rule{
     width:124px;
     height:3px;
-    margin:28px 0 0;
+    margin:32px 0 0;
     border-radius:999px;
     background:linear-gradient(90deg,
       var(--orange) 0%, var(--red) 27%, var(--purple) 52%, var(--blue) 76%, var(--teal) 100%);
@@ -172,10 +198,10 @@
 
   .lede{
     margin-top:26px;
-    max-width:58ch;
+    max-width:70ch;
     font-size:clamp(14.5px,1.9vw,16px);
     line-height:1.75;
-    color:var(--muted);
+    color:rgba(255,255,255,.8);
     text-wrap:pretty;
   }
 
@@ -233,7 +259,8 @@
     .btn{justify-content:center}
   }
   @media (prefers-reduced-motion: reduce){
-    .dot{animation:none}
+    .dot,.badge::after{animation:none}
+    .badge::after{display:none}
   }
 </style>
 </head>
@@ -249,13 +276,12 @@
 
   <div class="top">
     <img class="logo" src="assets/logo-mark.svg" alt="Affinity Dye Chem">
-    <span class="badge"><span class="dot"></span> Launching soon</span>
   </div>
 
   <main>
-    <h1>Looking for dyes and chemicals? You're in the right place.</h1>
+    <span class="badge"><span class="dot"></span> Website launching soon</span>
 
-    <div class="rule"></div>
+    <h1>Looking for dyes and chemicals? <br>You're in the right place.</h1>
 
     <p class="lede">
       We supply quality dyes and specialty chemicals to textile mills and
@@ -263,6 +289,8 @@
       service. Our full website is on its way, but we're already here to help.
       Request our product catalogue or get in touch to discuss your requirements.
     </p>
+
+    <div class="rule"></div>
 
     <div class="actions">
       <a class="btn btn-primary" href="mailto:info@affinitydyechem.com?subject=Product%20catalogue%20request">
