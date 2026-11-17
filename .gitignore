@@ -2,3 +2,7 @@
 *.zip
 .claude/
 og-build.html
+
+# Internal files: never commit, never publish
+CLAUDE.md
+docs/
