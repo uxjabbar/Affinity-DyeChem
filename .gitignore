@@ -6,3 +6,6 @@ og-build.html
 # Internal files: never commit, never publish
 CLAUDE.md
 docs/
+
+# Design option pages: local only, never publish
+_preview/

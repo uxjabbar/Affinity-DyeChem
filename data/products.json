@@ -1,0 +1,60 @@
+{
+  "_note": "All products live here. Pages read from this file. Star products are placeholders until the founder fills them in.",
+
+  "dyes": [
+    { "id": "reactive",   "name": "Reactive dyes",         "eyebrow": "Dyes for cotton",         "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "sulphur",    "name": "Sulphur dyes",          "eyebrow": "Dyes for cotton",         "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "vat",        "name": "Vat dyes",              "eyebrow": "Dyes for cotton",         "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "direct",     "name": "Direct dyes",           "eyebrow": "Dyes for cotton",         "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "disperse",   "name": "Disperse dyes",         "eyebrow": "Dyes for polyester",      "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "acid",       "name": "Acid dyes",             "eyebrow": "Dyes for wool and nylon", "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "basic",      "name": "Basic / cationic dyes", "eyebrow": "Dyes for acrylic",        "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] },
+    { "id": "naphthols",  "name": "Naphthols & bases",     "eyebrow": "Azoic colours",           "count": null, "stars": [ { "name": "Placeholder product", "shade": null } ] }
+  ],
+
+  "chemicals": [
+    { "id": "pretreatment", "name": "Pretreatment",     "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] },
+    { "id": "dyeing",       "name": "Dyeing",           "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] },
+    { "id": "washing",      "name": "Washing & fixing", "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] },
+    { "id": "softening",    "name": "Softening",        "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] },
+    { "id": "finishing",    "name": "Finishing",        "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] },
+    { "id": "printing",     "name": "Printing",         "count": null, "stars": [ { "name": "Placeholder product", "use": "One-line use goes here." } ] }
+  ],
+
+  "affinitone": [
+    { "name": "Lemon Yellow",     "code": "A-RG",  "shade": "lemon-yellow" },
+    { "name": "Lemon Yellow",     "code": "A-GN",  "shade": "lemon-yellow" },
+    { "name": "Golden Yellow",    "code": "A-MR",  "shade": "golden-yellow" },
+    { "name": "Golden Yellow",    "code": "A-3R",  "shade": "golden-yellow" },
+    { "name": "Orange",           "code": "A-2R",  "shade": "orange" },
+    { "name": "Orange",           "code": "A-3R",  "shade": "orange" },
+    { "name": "Red",              "code": "A-RN",  "shade": "red" },
+    { "name": "Red",              "code": "A-RCN", "shade": "red" },
+    { "name": "Red",              "code": "A-KBB", "shade": "red" },
+    { "name": "Red",              "code": "A-FFG", "shade": "red" },
+    { "name": "Pink",             "code": "A-5BN", "shade": "pink" },
+    { "name": "Pink",             "code": "A-3BL", "shade": "pink" },
+    { "name": "Violet",           "code": "A-FR",  "shade": "violet" },
+    { "name": "Blue",             "code": "A-RN",  "shade": "blue" },
+    { "name": "Blue",             "code": "A-GN",  "shade": "blue" },
+    { "name": "Turquoise Blue",   "code": "A-3G",  "shade": "turquoise" },
+    { "name": "Green",            "code": "A-2B",  "shade": "green" },
+    { "name": "Black",            "code": "A-BB",  "shade": "black" },
+    { "name": "Black",            "code": "A-GB",  "shade": "black" },
+    { "name": "Black",            "code": "A-RB",  "shade": "black" },
+    { "name": "Brown",            "code": "A-RB",  "shade": "brown" },
+    { "name": "White (Paste)",    "code": "A-RT",  "shade": "white" }
+  ],
+
+  "shades": {
+    "black": "#1c1c1c", "navy": "#23315e", "blue": "#2061c4", "turquoise": "#0f9fb3",
+    "green": "#2f8f46", "dark-green": "#1f5a35", "olive": "#6f7a2c", "khaki": "#b39d63",
+    "yellow": "#f3c51b", "lemon-yellow": "#f2e04a", "golden-yellow": "#f0a81a", "yellow-brown": "#b5791f",
+    "orange": "#f07c1a", "red": "#d42a30", "scarlet": "#e2472b", "rubine": "#a8174d",
+    "rose": "#e3658f", "pink": "#ec5fa1", "magenta": "#c3197c", "violet": "#6b3fa0",
+    "red-violet": "#8f2b6f", "brown": "#7b4a2b", "bordeaux": "#6e1b2c", "garnet": "#7c2131",
+    "congo-red": "#c62d2d", "rhodamine": "#e0338f", "auramine": "#f2d01f", "malachite-green": "#149a6c",
+    "metanil-yellow": "#f5b500", "white": "#ffffff", "fluorescent-yellow": "#e4f21a", "fluorescent-orange": "#ff7a1a",
+    "fluorescent-red": "#ff3b4a", "fluorescent-pink": "#ff4fa8", "fluorescent-blue": "#1e8cff"
+  }
+}
